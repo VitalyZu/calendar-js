@@ -14,10 +14,8 @@ angular.
             return item.id === id
           })
           localStorage.setItem('events', JSON.stringify(array))
-          
           console.log(this.event)
           this.days = _.filter(lsService, ['date', this.event.date])
-
         }
       }
     ]

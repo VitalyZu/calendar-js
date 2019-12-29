@@ -1,1 +1,1 @@
-angular.module('dayDetail',['ngRoute'])
+angular.module('dayDetail', ['ngRoute'])

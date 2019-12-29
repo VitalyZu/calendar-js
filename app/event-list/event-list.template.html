@@ -2,7 +2,8 @@
     <h3>Events:</h3>
     <form name='findDay' id='findday'>
         Find events by date:
-        <input type="text" ng-model='date' required ng-pattern="/\d\d\d\d.\d\d.\d\d/" placeholder='enter date in yyyy.mm.dd'>
+        <input type="text" ng-model='date' required ng-pattern="/\d\d\d\d.\d\d.\d\d/"
+            placeholder='enter date in yyyy.mm.dd'>
         <button ng-click='$ctrl.findDay(date,findDay)'>Find</button>
     </form>
     Search event:

@@ -14,8 +14,8 @@ angular.module('eventForm')
                 if (!(calendarFactory.date && $scope.title)) { return }
                 let date = calendarFactory.date
                 date = date.split(this.re)
-                date.forEach(function(v,i,a){
-                    a[i] = v.padStart(2,0)
+                date.forEach(function (v, i, a) {
+                    a[i] = v.padStart(2, 0)
                 })
                 this.events.push(
                     {

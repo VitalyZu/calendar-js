@@ -67,14 +67,14 @@ angular.module('calendar')
                     date = +e.target.innerHTML
                     calendarFactory.hideForm = false
                     if (date > 0) {
-                        calendarFactory.date = `${this.year}.${this.month.toString().padStart(2,0)}.${date.toString().padStart(2,0)}`
+                        calendarFactory.date = `${this.year}.${this.month.toString().padStart(2, 0)}.${date.toString().padStart(2, 0)}`
                     }
                 }
             }
             this.createEvent = function () {
                 calendarFactory.hideForm = !calendarFactory.hideForm
                 let d = new Date()
-                calendarFactory.date = `${d.getFullYear()}.${d.getMonth()+1}.${d.getDate()}`
+                calendarFactory.date = `${d.getFullYear()}.${d.getMonth() + 1}.${d.getDate()}`
             }
         }]
     })

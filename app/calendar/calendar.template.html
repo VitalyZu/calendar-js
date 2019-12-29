@@ -1,8 +1,9 @@
 <div class=calendar>
     {{$ctrl.createCalendar($ctrl.calendarElement,$ctrl.year,$ctrl.month)}}
     <div class='bold'>{{$ctrl.r | date:'MMMM'}} {{$ctrl.year}}</div>
-    <button ng-click='$ctrl.prevMonth()'><<</button>
-    <button ng-click='$ctrl.nextMonth()'>>></button>
+    <button ng-click='$ctrl.prevMonth()'>
+        <<</button> <button ng-click='$ctrl.nextMonth()'>>>
+    </button>
     <div id='calendar' ng-click='$ctrl.pickDate($event)'></div>
     <button ng-click='$ctrl.createEvent()'>Add event</button>
 </div>
