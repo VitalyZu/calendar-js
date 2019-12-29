@@ -1,0 +1,151 @@
+body {
+  font-family: 'Kulim Park', sans-serif;
+}
+
+span {
+  display: block;
+  height: 100%;
+}
+
+select {
+  width: 50px;
+  display: inline-block;
+}
+
+ol {
+  padding: 0;
+}
+
+li {
+  display: flex;
+  border: solid 1px black;
+  padding: 5px;
+  font-size: 12px;
+  margin-bottom: 2px;
+  width: 50%;
+}
+
+li * {
+  margin-right: 5px;
+}
+
+li *:last-child{
+  margin-left: auto;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  color: black;
+}
+
+.event-form {
+  position: fixed;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  border: solid 2px black;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.bold {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.event-detail {
+  border: solid 1px black;
+  margin: 10px;
+  padding: 10px;
+}
+.event-detail span {
+  font-size: 10px;
+}
+
+.inputs {
+  width: 220px;
+  background-color: white;
+  padding: 10px;
+  border: solid 1px black;
+  z-index: 999;
+}
+
+.event-form * {
+  margin: 5px;
+}
+
+.event-list, .calendar {
+  margin: 10px;
+  
+}
+
+.event-list {
+  border-top: 1px solid black;
+}
+
+#findday {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: -10px 0 20px 0;
+}
+
+#findday input  {
+  width: 200px;
+  margin: 0 5px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 5px 0;
+}
+
+td,
+th {
+  border: 1px solid black;
+  text-align: center;
+  width: 60px;
+  min-height: 60px;
+}
+
+th {
+  font-weight: bold;
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+  height: 60px;
+}
+
+.eventday {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 60px;
+}
+
+.eventday button {
+  padding: 0px;
+  display: block;
+  font-size: 8px;
+  width: 100%;
+}
+
+.eventday span {
+  flex-grow: 2;
+}
+
+.day-event, .day-detail {
+  margin: 10px;
+}
+

@@ -1,0 +1,23 @@
+{{$ctrl.timePicker()}}
+<div ng-hide='calendarFactory.hideForm' class='event-form' ng-click='$ctrl.hideForm($event)' id='modal'>
+    <form class='inputs' name='form'>
+        <div>Date: <span class='bold'>{{date?date:calendarFactory.date}}<span></div>
+        Change date:
+        <input type="text" ng-model='date' ng-pattern="/\d\d\d\d.\d\d.\d\d/" placeholder='yyyy.mm.dd'>
+        Title:
+        <input type="text" ng-model='title' required>
+        Time:
+        <select id='hour-select'>
+            <option ng-repeat='val in _.range(24);'>{{val.toString().padStart(2,0)}}</option>
+        </select>
+        <select id='min-select'>
+            <option ng-repeat='val in _.range(60);'>{{val.toString().padStart(2,0)}}</option>
+        </select><br>
+        Users:
+        <input type="text" ng-model='users' class='users'>
+        Descriptoin:
+        <input type="text" ng-model='desc' class='description'>
+        <button ng-click='$ctrl.submitForm()'>Submit</button>
+        <button ng-click='calendarFactory.hideForm=true'>Close</button>
+    </form>
+</div>

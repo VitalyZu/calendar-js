@@ -1,0 +1,12 @@
+<div class='day-detail'>
+    <h1>{{($ctrl.event.date).split('-').join('.')}}</h1>
+    <div ng-repeat='event in $ctrl.days' class='event-detail'>
+        <div>Title: {{event.title}}</div>
+        <div>Time: {{event.time}}</div>
+        <div>Users: {{event.users}}</div>
+        <div>Description: {{event.desc}}</div>
+        <span>{{event.id | date:"dd MMMM yyyy 'at' h:mma"}}</span>
+        <button ng-click='$ctrl.deleteEvent(event.id)'>delete</button>
+    </div>
+    <a href="#!/calendar" class='bold'>back</a>
+</div>

@@ -1,0 +1,10 @@
+<div class='day-event'>
+    <h1>{{$ctrl.day}}</h1>
+    <div ng-repeat='event in $ctrl.event' class='event-detail'>
+        <div>Title: {{event.title}}</div>
+        <div>Time: {{event.time}}</div>
+        <div>Users: {{event.user}}</div>
+        <div>Description: {{event.desc}}</div>
+    </div>
+    <a href="#!/calendar" class='bold'>back</a>
+</div>
