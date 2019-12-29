@@ -7,7 +7,6 @@ angular.module('eventList')
             this.deleteEvent = function (id) {
                 let array = lsService
                 _.remove(array, function (item) {
-                    console.log(item)
                     return item.id === id
                 })
                 localStorage.setItem('events', JSON.stringify(array))

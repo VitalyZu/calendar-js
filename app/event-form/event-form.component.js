@@ -9,7 +9,6 @@ angular.module('eventForm')
             this.events = lsService
             this.re = /\W/
             this.submitForm = function () {
-                console.log($scope.form)
                 $scope.date ? calendarFactory.date = $scope.date : ''
                 if (!(calendarFactory.date && $scope.title)) { return }
                 let date = calendarFactory.date

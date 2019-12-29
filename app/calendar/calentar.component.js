@@ -61,7 +61,6 @@ angular.module('calendar')
                 }
             }
             this.pickDate = function (e) {
-                console.log(e.target.tagName)
                 let date
                 if (e.target.tagName === 'SPAN') {
                     date = +e.target.innerHTML
