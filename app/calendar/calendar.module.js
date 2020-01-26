@@ -1,1 +1,2 @@
-angular.module('calendar', [])
+"use strict";
+angular.module('calendar', []);

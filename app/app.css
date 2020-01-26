@@ -149,3 +149,10 @@ th {
   margin: 10px;
 }
 
+.form {
+  z-index: 10000;
+}
+
+.active {
+  border: solid 2px green
+}

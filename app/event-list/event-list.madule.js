@@ -1,1 +1,2 @@
-angular.module('eventList', [])
+"use strict";
+angular.module('eventList', []);

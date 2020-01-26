@@ -7,12 +7,16 @@
         <button ng-click='$ctrl.findDay(date,findDay)'>Find</button>
     </form>
     Search event:
-    <input type="text" name="search-event" ng-model='query' placeholder='search event'>
+    <input type="text" name="search-event" ng-model='query' placeholder='search'>
     <ol>
         <li ng-repeat='event in $ctrl.eventList| filter:{"title":query} track by event.id '>
             <p>{{event.date}}</p>
-            <p>{{event.title}}</p>
+            <p> "{{event.title}}"</p>
+            <p>{{event.type}}</p>
+            <p>{{event.time}}</p>
+            <p ng-show='!!event.time1'> to {{event.time1}}</p>
             <button ng-click='$ctrl.deleteEvent(event.id)'>delete</button>
         </li>
     </ol>
+    checked typescript
 </div>

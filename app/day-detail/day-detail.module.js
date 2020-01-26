@@ -1,1 +1,2 @@
-angular.module('dayDetail', ['ngRoute'])
+"use strict";
+angular.module('dayDetail', ['ngRoute']);

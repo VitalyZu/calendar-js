@@ -1,1 +1,2 @@
-angular.module('dayEvent', ['ngRoute'])
+"use strict";
+angular.module('dayEvent', ['ngRoute']);
